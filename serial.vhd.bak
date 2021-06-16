@@ -1,0 +1,71 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use ieee.numeric_std.all;
+
+entity delta is
+
+    Port ( 	CLK : in std_logic;
+			RX : in std_logic);
+end delta;
+
+architecture Behavioral of delta is
+
+	signal Adone : std_logic :='0';
+	signal Adone2 : std_logic :='0';
+	signal Abitt : std_logic_vector(36 downto 0);
+	signal Bdone : std_logic :='0';
+	signal Bdone2 : std_logic :='0';
+	signal Bbitt : std_logic_vector(36 downto 0);
+	signal Cdone : std_logic :='0';
+	signal Cdone2 : std_logic :='0';
+	signal Cbitt : std_logic_vector(36 downto 0);
+	signal X_count_pos : std_logic_vector(18 downto 0);
+	signal X_count_neg : std_logic_vector(18 downto 0);
+	signal Y_count_pos : std_logic_vector(18 downto 0);
+	signal Y_count_neg : std_logic_vector(18 downto 0);
+	signal Z_count_pos : std_logic_vector(18 downto 0);
+	signal A_count_pos : std_logic_vector(18 downto 0):="0000010111011110110";
+	signal A_B : std_logic_vector(37 downto 0);
+	signal A_res : std_logic_vector(36 downto 0);
+	signal A_P : std_logic_vector(36 downto 0);
+	signal A1 : std_logic;
+	signal B_count_pos : std_logic_vector(18 downto 0):="0000010111011110110";
+	signal B_B : std_logic_vector(37 downto 0);
+	signal B_res : std_logic_vector(36 downto 0);
+	signal B_P : std_logic_vector(36 downto 0);
+	signal B1 : std_logic;
+	signal C_count_pos : std_logic_vector(18 downto 0):="0000010111011110110";
+	signal C_B : std_logic_vector(37 downto 0);
+	signal C_res : std_logic_vector(36 downto 0);
+	signal C_P : std_logic_vector(36 downto 0);
+	signal C1 : std_logic;
+	signal DD : std_logic_vector(13 downto 0);
+	signal CLK100 : std_logic;
+	
+begin
+
+process(CLK)
+begin
+	if CLK'event and CLK='1' then
+		if DD < "10110001000000" then
+			DD <= DD +'1';
+		elsif DD = "10110001000000" then
+			DD <= "00000000000000";
+		end if;
+	end if;
+end process;
+
+process(DD)
+begin
+	if DD="01011000100000" then
+		CLK100 <= '1';
+	elsif DD="00000000000000" then
+		CLK100 <= '0';
+	end if;
+end process;
+
+
+
+
+end Behavioral;

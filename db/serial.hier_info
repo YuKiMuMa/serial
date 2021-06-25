@@ -1,0 +1,47 @@
+|serial
+CLK => bsy.CLK
+CLK => result[0]~reg0.CLK
+CLK => result[1]~reg0.CLK
+CLK => result[2]~reg0.CLK
+CLK => result[3]~reg0.CLK
+CLK => result[4]~reg0.CLK
+CLK => result[5]~reg0.CLK
+CLK => result[6]~reg0.CLK
+CLK => result[7]~reg0.CLK
+CLK => b_count[0].CLK
+CLK => b_count[1].CLK
+CLK => b_count[2].CLK
+CLK => b_count[3].CLK
+CLK => s_result[0].CLK
+CLK => s_result[1].CLK
+CLK => s_result[2].CLK
+CLK => s_result[3].CLK
+CLK => s_result[4].CLK
+CLK => s_result[5].CLK
+CLK => s_result[6].CLK
+CLK => s_result[7].CLK
+CLK => count[0].CLK
+CLK => count[1].CLK
+CLK => count[2].CLK
+CLK => count[3].CLK
+CLK => count[4].CLK
+CLK => count[5].CLK
+CLK => count[6].CLK
+CLK => count[7].CLK
+CLK => count[8].CLK
+CLK => count[9].CLK
+CLK => count[10].CLK
+CLK => count[11].CLK
+CLK => count[12].CLK
+RX => s_result~8.DATAB
+RX => bsy~4.DATAA
+result[0] <= result[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= result[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= result[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= result[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= result[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[5] <= result[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[6] <= result[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+result[7] <= result[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

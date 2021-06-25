@@ -1,0 +1,434 @@
+Simulator report for serial
+Fri Jun 25 15:57:31 2021
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 197 nodes    ;
+; Simulation Coverage         ;      55.84 % ;
+; Total Number of Transitions ; 5299         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                        ;
++--------------------------------------------------------------------------------------------+----------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                      ; Default Value ;
++--------------------------------------------------------------------------------------------+----------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                   ; Timing        ;
+; Start time                                                                                 ; 0 ns                                         ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                          ;               ;
+; Vector input source                                                                        ; D:/industrial/delta/fpga/serial/Waveform.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                           ; On            ;
+; Check outputs                                                                              ; Off                                          ; Off           ;
+; Report simulation coverage                                                                 ; On                                           ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                           ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                           ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                           ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                          ; Off           ;
+; Detect glitches                                                                            ; Off                                          ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                          ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                          ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                          ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                          ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                           ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                   ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                          ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                          ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                         ; Auto          ;
++--------------------------------------------------------------------------------------------+----------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      55.84 % ;
+; Total nodes checked                                 ; 197          ;
+; Total output ports checked                          ; 197          ;
+; Total output ports with complete 1/0-value coverage ; 110          ;
+; Total output ports with no 1/0-value coverage       ; 75           ;
+; Total output ports with no 1-value coverage         ; 75           ;
+; Total output ports with no 0-value coverage         ; 87           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                        ;
++------------------------+------------------------+------------------+
+; Node Name              ; Output Port Name       ; Output Port Type ;
++------------------------+------------------------+------------------+
+; |serial|bsy            ; |serial|bsy            ; regout           ;
+; |serial|s_result~0     ; |serial|s_result~0     ; out              ;
+; |serial|s_result~1     ; |serial|s_result~1     ; out              ;
+; |serial|s_result~2     ; |serial|s_result~2     ; out              ;
+; |serial|s_result~3     ; |serial|s_result~3     ; out              ;
+; |serial|s_result~4     ; |serial|s_result~4     ; out              ;
+; |serial|s_result~5     ; |serial|s_result~5     ; out              ;
+; |serial|s_result~8     ; |serial|s_result~8     ; out              ;
+; |serial|s_result~9     ; |serial|s_result~9     ; out              ;
+; |serial|s_result~10    ; |serial|s_result~10    ; out              ;
+; |serial|s_result~11    ; |serial|s_result~11    ; out              ;
+; |serial|s_result~12    ; |serial|s_result~12    ; out              ;
+; |serial|s_result~13    ; |serial|s_result~13    ; out              ;
+; |serial|s_result~14    ; |serial|s_result~14    ; out              ;
+; |serial|b_count~0      ; |serial|b_count~0      ; out              ;
+; |serial|b_count~1      ; |serial|b_count~1      ; out              ;
+; |serial|b_count~2      ; |serial|b_count~2      ; out              ;
+; |serial|b_count~3      ; |serial|b_count~3      ; out              ;
+; |serial|b_count~4      ; |serial|b_count~4      ; out              ;
+; |serial|b_count~5      ; |serial|b_count~5      ; out              ;
+; |serial|b_count~6      ; |serial|b_count~6      ; out              ;
+; |serial|b_count~7      ; |serial|b_count~7      ; out              ;
+; |serial|result~2       ; |serial|result~2       ; out              ;
+; |serial|result~3       ; |serial|result~3       ; out              ;
+; |serial|result~10      ; |serial|result~10      ; out              ;
+; |serial|result~11      ; |serial|result~11      ; out              ;
+; |serial|bsy~0          ; |serial|bsy~0          ; out              ;
+; |serial|bsy~1          ; |serial|bsy~1          ; out              ;
+; |serial|count~9        ; |serial|count~9        ; out              ;
+; |serial|count~10       ; |serial|count~10       ; out              ;
+; |serial|count~11       ; |serial|count~11       ; out              ;
+; |serial|count~12       ; |serial|count~12       ; out              ;
+; |serial|count~22       ; |serial|count~22       ; out              ;
+; |serial|count~23       ; |serial|count~23       ; out              ;
+; |serial|count~24       ; |serial|count~24       ; out              ;
+; |serial|count~25       ; |serial|count~25       ; out              ;
+; |serial|s_result~16    ; |serial|s_result~16    ; out              ;
+; |serial|s_result~17    ; |serial|s_result~17    ; out              ;
+; |serial|s_result~18    ; |serial|s_result~18    ; out              ;
+; |serial|s_result~19    ; |serial|s_result~19    ; out              ;
+; |serial|s_result~20    ; |serial|s_result~20    ; out              ;
+; |serial|s_result~21    ; |serial|s_result~21    ; out              ;
+; |serial|s_result~22    ; |serial|s_result~22    ; out              ;
+; |serial|s_result~24    ; |serial|s_result~24    ; out              ;
+; |serial|s_result~25    ; |serial|s_result~25    ; out              ;
+; |serial|s_result~26    ; |serial|s_result~26    ; out              ;
+; |serial|s_result~27    ; |serial|s_result~27    ; out              ;
+; |serial|s_result~28    ; |serial|s_result~28    ; out              ;
+; |serial|s_result~29    ; |serial|s_result~29    ; out              ;
+; |serial|s_result~30    ; |serial|s_result~30    ; out              ;
+; |serial|b_count~8      ; |serial|b_count~8      ; out              ;
+; |serial|b_count~9      ; |serial|b_count~9      ; out              ;
+; |serial|b_count~10     ; |serial|b_count~10     ; out              ;
+; |serial|b_count~11     ; |serial|b_count~11     ; out              ;
+; |serial|b_count~12     ; |serial|b_count~12     ; out              ;
+; |serial|b_count~13     ; |serial|b_count~13     ; out              ;
+; |serial|b_count~14     ; |serial|b_count~14     ; out              ;
+; |serial|b_count~15     ; |serial|b_count~15     ; out              ;
+; |serial|result~18      ; |serial|result~18      ; out              ;
+; |serial|result~19      ; |serial|result~19      ; out              ;
+; |serial|result~26      ; |serial|result~26      ; out              ;
+; |serial|result~27      ; |serial|result~27      ; out              ;
+; |serial|bsy~2          ; |serial|bsy~2          ; out              ;
+; |serial|bsy~3          ; |serial|bsy~3          ; out              ;
+; |serial|bsy~4          ; |serial|bsy~4          ; out              ;
+; |serial|result[4]~reg0 ; |serial|result[4]~reg0 ; regout           ;
+; |serial|result[5]~reg0 ; |serial|result[5]~reg0 ; regout           ;
+; |serial|b_count[0]     ; |serial|b_count[0]     ; regout           ;
+; |serial|b_count[1]     ; |serial|b_count[1]     ; regout           ;
+; |serial|b_count[2]     ; |serial|b_count[2]     ; regout           ;
+; |serial|b_count[3]     ; |serial|b_count[3]     ; regout           ;
+; |serial|s_result[1]    ; |serial|s_result[1]    ; regout           ;
+; |serial|s_result[2]    ; |serial|s_result[2]    ; regout           ;
+; |serial|s_result[3]    ; |serial|s_result[3]    ; regout           ;
+; |serial|s_result[4]    ; |serial|s_result[4]    ; regout           ;
+; |serial|s_result[5]    ; |serial|s_result[5]    ; regout           ;
+; |serial|s_result[6]    ; |serial|s_result[6]    ; regout           ;
+; |serial|s_result[7]    ; |serial|s_result[7]    ; regout           ;
+; |serial|count[0]       ; |serial|count[0]       ; regout           ;
+; |serial|count[1]       ; |serial|count[1]       ; regout           ;
+; |serial|count[2]       ; |serial|count[2]       ; regout           ;
+; |serial|count[3]       ; |serial|count[3]       ; regout           ;
+; |serial|CLK            ; |serial|CLK            ; out              ;
+; |serial|RX             ; |serial|RX             ; out              ;
+; |serial|result[4]      ; |serial|result[4]      ; pin_out          ;
+; |serial|result[5]      ; |serial|result[5]      ; pin_out          ;
+; |serial|LessThan0~0    ; |serial|LessThan0~0    ; out0             ;
+; |serial|LessThan0~1    ; |serial|LessThan0~1    ; out0             ;
+; |serial|LessThan0~2    ; |serial|LessThan0~2    ; out0             ;
+; |serial|LessThan0~3    ; |serial|LessThan0~3    ; out0             ;
+; |serial|LessThan0~4    ; |serial|LessThan0~4    ; out0             ;
+; |serial|LessThan0~5    ; |serial|LessThan0~5    ; out0             ;
+; |serial|LessThan0~6    ; |serial|LessThan0~6    ; out0             ;
+; |serial|LessThan0~7    ; |serial|LessThan0~7    ; out0             ;
+; |serial|LessThan0~8    ; |serial|LessThan0~8    ; out0             ;
+; |serial|LessThan0~9    ; |serial|LessThan0~9    ; out0             ;
+; |serial|LessThan0~10   ; |serial|LessThan0~10   ; out0             ;
+; |serial|LessThan0~11   ; |serial|LessThan0~11   ; out0             ;
+; |serial|Add0~0         ; |serial|Add0~0         ; out0             ;
+; |serial|Add0~1         ; |serial|Add0~1         ; out0             ;
+; |serial|Add0~2         ; |serial|Add0~2         ; out0             ;
+; |serial|Add0~3         ; |serial|Add0~3         ; out0             ;
+; |serial|Add0~4         ; |serial|Add0~4         ; out0             ;
+; |serial|Add1~0         ; |serial|Add1~0         ; out0             ;
+; |serial|Add1~1         ; |serial|Add1~1         ; out0             ;
+; |serial|Add1~2         ; |serial|Add1~2         ; out0             ;
+; |serial|Add1~3         ; |serial|Add1~3         ; out0             ;
+; |serial|Add1~4         ; |serial|Add1~4         ; out0             ;
+; |serial|Equal0~0       ; |serial|Equal0~0       ; out0             ;
+; |serial|Equal1~0       ; |serial|Equal1~0       ; out0             ;
++------------------------+------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------+
+; Missing 1-Value Coverage                                           ;
++------------------------+------------------------+------------------+
+; Node Name              ; Output Port Name       ; Output Port Type ;
++------------------------+------------------------+------------------+
+; |serial|s_result~6     ; |serial|s_result~6     ; out              ;
+; |serial|s_result~7     ; |serial|s_result~7     ; out              ;
+; |serial|s_result~15    ; |serial|s_result~15    ; out              ;
+; |serial|result~0       ; |serial|result~0       ; out              ;
+; |serial|result~1       ; |serial|result~1       ; out              ;
+; |serial|result~5       ; |serial|result~5       ; out              ;
+; |serial|result~7       ; |serial|result~7       ; out              ;
+; |serial|result~8       ; |serial|result~8       ; out              ;
+; |serial|result~9       ; |serial|result~9       ; out              ;
+; |serial|result~13      ; |serial|result~13      ; out              ;
+; |serial|result~15      ; |serial|result~15      ; out              ;
+; |serial|count~0        ; |serial|count~0        ; out              ;
+; |serial|count~1        ; |serial|count~1        ; out              ;
+; |serial|count~2        ; |serial|count~2        ; out              ;
+; |serial|count~3        ; |serial|count~3        ; out              ;
+; |serial|count~4        ; |serial|count~4        ; out              ;
+; |serial|count~5        ; |serial|count~5        ; out              ;
+; |serial|count~6        ; |serial|count~6        ; out              ;
+; |serial|count~7        ; |serial|count~7        ; out              ;
+; |serial|count~8        ; |serial|count~8        ; out              ;
+; |serial|count~13       ; |serial|count~13       ; out              ;
+; |serial|count~14       ; |serial|count~14       ; out              ;
+; |serial|count~15       ; |serial|count~15       ; out              ;
+; |serial|count~16       ; |serial|count~16       ; out              ;
+; |serial|count~17       ; |serial|count~17       ; out              ;
+; |serial|count~18       ; |serial|count~18       ; out              ;
+; |serial|count~19       ; |serial|count~19       ; out              ;
+; |serial|count~20       ; |serial|count~20       ; out              ;
+; |serial|count~21       ; |serial|count~21       ; out              ;
+; |serial|s_result~23    ; |serial|s_result~23    ; out              ;
+; |serial|s_result~31    ; |serial|s_result~31    ; out              ;
+; |serial|result~16      ; |serial|result~16      ; out              ;
+; |serial|result~17      ; |serial|result~17      ; out              ;
+; |serial|result~21      ; |serial|result~21      ; out              ;
+; |serial|result~23      ; |serial|result~23      ; out              ;
+; |serial|result~24      ; |serial|result~24      ; out              ;
+; |serial|result~25      ; |serial|result~25      ; out              ;
+; |serial|result~29      ; |serial|result~29      ; out              ;
+; |serial|result~31      ; |serial|result~31      ; out              ;
+; |serial|result[0]~reg0 ; |serial|result[0]~reg0 ; regout           ;
+; |serial|result[2]~reg0 ; |serial|result[2]~reg0 ; regout           ;
+; |serial|result[6]~reg0 ; |serial|result[6]~reg0 ; regout           ;
+; |serial|result[7]~reg0 ; |serial|result[7]~reg0 ; regout           ;
+; |serial|s_result[0]    ; |serial|s_result[0]    ; regout           ;
+; |serial|count[4]       ; |serial|count[4]       ; regout           ;
+; |serial|count[5]       ; |serial|count[5]       ; regout           ;
+; |serial|count[6]       ; |serial|count[6]       ; regout           ;
+; |serial|count[7]       ; |serial|count[7]       ; regout           ;
+; |serial|count[8]       ; |serial|count[8]       ; regout           ;
+; |serial|count[9]       ; |serial|count[9]       ; regout           ;
+; |serial|count[10]      ; |serial|count[10]      ; regout           ;
+; |serial|count[11]      ; |serial|count[11]      ; regout           ;
+; |serial|count[12]      ; |serial|count[12]      ; regout           ;
+; |serial|result[0]      ; |serial|result[0]      ; pin_out          ;
+; |serial|result[2]      ; |serial|result[2]      ; pin_out          ;
+; |serial|result[6]      ; |serial|result[6]      ; pin_out          ;
+; |serial|result[7]      ; |serial|result[7]      ; pin_out          ;
+; |serial|Add0~5         ; |serial|Add0~5         ; out0             ;
+; |serial|Add0~6         ; |serial|Add0~6         ; out0             ;
+; |serial|Add0~7         ; |serial|Add0~7         ; out0             ;
+; |serial|Add0~8         ; |serial|Add0~8         ; out0             ;
+; |serial|Add0~9         ; |serial|Add0~9         ; out0             ;
+; |serial|Add0~10        ; |serial|Add0~10        ; out0             ;
+; |serial|Add0~11        ; |serial|Add0~11        ; out0             ;
+; |serial|Add0~12        ; |serial|Add0~12        ; out0             ;
+; |serial|Add0~13        ; |serial|Add0~13        ; out0             ;
+; |serial|Add0~14        ; |serial|Add0~14        ; out0             ;
+; |serial|Add0~15        ; |serial|Add0~15        ; out0             ;
+; |serial|Add0~16        ; |serial|Add0~16        ; out0             ;
+; |serial|Add0~17        ; |serial|Add0~17        ; out0             ;
+; |serial|Add0~18        ; |serial|Add0~18        ; out0             ;
+; |serial|Add0~19        ; |serial|Add0~19        ; out0             ;
+; |serial|Add0~20        ; |serial|Add0~20        ; out0             ;
+; |serial|Add0~21        ; |serial|Add0~21        ; out0             ;
+; |serial|Add0~22        ; |serial|Add0~22        ; out0             ;
++------------------------+------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------+
+; Missing 0-Value Coverage                                           ;
++------------------------+------------------------+------------------+
+; Node Name              ; Output Port Name       ; Output Port Type ;
++------------------------+------------------------+------------------+
+; |serial|s_result~6     ; |serial|s_result~6     ; out              ;
+; |serial|s_result~7     ; |serial|s_result~7     ; out              ;
+; |serial|s_result~15    ; |serial|s_result~15    ; out              ;
+; |serial|result~0       ; |serial|result~0       ; out              ;
+; |serial|result~1       ; |serial|result~1       ; out              ;
+; |serial|result~4       ; |serial|result~4       ; out              ;
+; |serial|result~5       ; |serial|result~5       ; out              ;
+; |serial|result~6       ; |serial|result~6       ; out              ;
+; |serial|result~7       ; |serial|result~7       ; out              ;
+; |serial|result~8       ; |serial|result~8       ; out              ;
+; |serial|result~9       ; |serial|result~9       ; out              ;
+; |serial|result~12      ; |serial|result~12      ; out              ;
+; |serial|result~13      ; |serial|result~13      ; out              ;
+; |serial|result~14      ; |serial|result~14      ; out              ;
+; |serial|result~15      ; |serial|result~15      ; out              ;
+; |serial|count~0        ; |serial|count~0        ; out              ;
+; |serial|count~1        ; |serial|count~1        ; out              ;
+; |serial|count~2        ; |serial|count~2        ; out              ;
+; |serial|count~3        ; |serial|count~3        ; out              ;
+; |serial|count~4        ; |serial|count~4        ; out              ;
+; |serial|count~5        ; |serial|count~5        ; out              ;
+; |serial|count~6        ; |serial|count~6        ; out              ;
+; |serial|count~7        ; |serial|count~7        ; out              ;
+; |serial|count~8        ; |serial|count~8        ; out              ;
+; |serial|count~13       ; |serial|count~13       ; out              ;
+; |serial|count~14       ; |serial|count~14       ; out              ;
+; |serial|count~15       ; |serial|count~15       ; out              ;
+; |serial|count~16       ; |serial|count~16       ; out              ;
+; |serial|count~17       ; |serial|count~17       ; out              ;
+; |serial|count~18       ; |serial|count~18       ; out              ;
+; |serial|count~19       ; |serial|count~19       ; out              ;
+; |serial|count~20       ; |serial|count~20       ; out              ;
+; |serial|count~21       ; |serial|count~21       ; out              ;
+; |serial|s_result~23    ; |serial|s_result~23    ; out              ;
+; |serial|s_result~31    ; |serial|s_result~31    ; out              ;
+; |serial|result~16      ; |serial|result~16      ; out              ;
+; |serial|result~17      ; |serial|result~17      ; out              ;
+; |serial|result~20      ; |serial|result~20      ; out              ;
+; |serial|result~21      ; |serial|result~21      ; out              ;
+; |serial|result~22      ; |serial|result~22      ; out              ;
+; |serial|result~23      ; |serial|result~23      ; out              ;
+; |serial|result~24      ; |serial|result~24      ; out              ;
+; |serial|result~25      ; |serial|result~25      ; out              ;
+; |serial|result~28      ; |serial|result~28      ; out              ;
+; |serial|result~29      ; |serial|result~29      ; out              ;
+; |serial|result~30      ; |serial|result~30      ; out              ;
+; |serial|result~31      ; |serial|result~31      ; out              ;
+; |serial|result[0]~reg0 ; |serial|result[0]~reg0 ; regout           ;
+; |serial|result[1]~reg0 ; |serial|result[1]~reg0 ; regout           ;
+; |serial|result[2]~reg0 ; |serial|result[2]~reg0 ; regout           ;
+; |serial|result[3]~reg0 ; |serial|result[3]~reg0 ; regout           ;
+; |serial|result[6]~reg0 ; |serial|result[6]~reg0 ; regout           ;
+; |serial|result[7]~reg0 ; |serial|result[7]~reg0 ; regout           ;
+; |serial|s_result[0]    ; |serial|s_result[0]    ; regout           ;
+; |serial|count[4]       ; |serial|count[4]       ; regout           ;
+; |serial|count[5]       ; |serial|count[5]       ; regout           ;
+; |serial|count[6]       ; |serial|count[6]       ; regout           ;
+; |serial|count[7]       ; |serial|count[7]       ; regout           ;
+; |serial|count[8]       ; |serial|count[8]       ; regout           ;
+; |serial|count[9]       ; |serial|count[9]       ; regout           ;
+; |serial|count[10]      ; |serial|count[10]      ; regout           ;
+; |serial|count[11]      ; |serial|count[11]      ; regout           ;
+; |serial|count[12]      ; |serial|count[12]      ; regout           ;
+; |serial|result[0]      ; |serial|result[0]      ; pin_out          ;
+; |serial|result[1]      ; |serial|result[1]      ; pin_out          ;
+; |serial|result[2]      ; |serial|result[2]      ; pin_out          ;
+; |serial|result[3]      ; |serial|result[3]      ; pin_out          ;
+; |serial|result[6]      ; |serial|result[6]      ; pin_out          ;
+; |serial|result[7]      ; |serial|result[7]      ; pin_out          ;
+; |serial|Add0~5         ; |serial|Add0~5         ; out0             ;
+; |serial|Add0~6         ; |serial|Add0~6         ; out0             ;
+; |serial|Add0~7         ; |serial|Add0~7         ; out0             ;
+; |serial|Add0~8         ; |serial|Add0~8         ; out0             ;
+; |serial|Add0~9         ; |serial|Add0~9         ; out0             ;
+; |serial|Add0~10        ; |serial|Add0~10        ; out0             ;
+; |serial|Add0~11        ; |serial|Add0~11        ; out0             ;
+; |serial|Add0~12        ; |serial|Add0~12        ; out0             ;
+; |serial|Add0~13        ; |serial|Add0~13        ; out0             ;
+; |serial|Add0~14        ; |serial|Add0~14        ; out0             ;
+; |serial|Add0~15        ; |serial|Add0~15        ; out0             ;
+; |serial|Add0~16        ; |serial|Add0~16        ; out0             ;
+; |serial|Add0~17        ; |serial|Add0~17        ; out0             ;
+; |serial|Add0~18        ; |serial|Add0~18        ; out0             ;
+; |serial|Add0~19        ; |serial|Add0~19        ; out0             ;
+; |serial|Add0~20        ; |serial|Add0~20        ; out0             ;
+; |serial|Add0~21        ; |serial|Add0~21        ; out0             ;
+; |serial|Add0~22        ; |serial|Add0~22        ; out0             ;
++------------------------+------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Fri Jun 25 15:57:31 2021
+Info: Command: quartus_sim --simulation_results_format=VWF serial -c serial
+Info (324025): Using vector source file "D:/industrial/delta/fpga/serial/Waveform.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      55.84 %
+Info (328052): Number of transitions in simulation is 5299
+Info (324045): Vector file serial.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4453 megabytes
+    Info: Processing ended: Fri Jun 25 15:57:31 2021
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
